@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+    <div class="panel-heading">Todo List</div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item clearfix" ng-repeat="todo in vm.todos">
+                {{todo.todo}}
+                <button class="btn btn-danger pull-right" ng-click="vm.deleteTodo()">Delete</button>
+            </li>
+        </ul>
+    </div>
+</div>
